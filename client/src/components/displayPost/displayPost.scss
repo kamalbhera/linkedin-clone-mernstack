@@ -1,0 +1,121 @@
+/* display post */ 
+.display-post { 
+    background-color:white; 
+    margin-bottom: 10px;
+    border: 1px solid var(--lightGray);
+    border-radius: 8px;
+
+    .display-post-header { 
+        padding: 10px; 
+        display:flex;  
+        align-items:center;  
+        gap: .5rem; 
+    } 
+    
+    .update-menu { 
+        margin-left:auto; 
+        position: relative;
+
+        button {
+            background-color: transparent;
+            border: none;
+        }
+
+        .menu-icon {
+            border: none;
+            border-radius: 50%;
+            background-color: transparent;
+            padding: 9px 10px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: .3s ease;
+            &:hover {
+                background-color: var(--whiteOff);
+            }
+        }
+
+        .menu-list {
+            position: absolute;
+            width: 200px;
+            top: 35px;
+            right: 5px;
+            background-color: #fff;
+            border: 1px solid var(--whiteOff);
+            border-radius: 5px;
+            flex-direction: column;
+            display: none;
+            span {
+                cursor: pointer;
+                padding: 10px;
+                transition: .3s ease;
+                &:hover {
+                    background-color: var(--whiteOff);
+                }
+            }
+
+            &.show-menu-list {
+                display: flex;
+            }
+        }
+    } 
+    
+    .user-avatar-img {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+    }
+
+    .user-detail {
+        p {
+            color: var(--darkOff);
+            font-size: 1rem;
+            font-weight: 600;
+        }
+
+        span {
+            font-size: 12px;
+            font-weight: 300;
+        }
+    }
+
+    .display-post-text { 
+        padding:10px;
+        color: var(--dark);
+        font-size: 16px;
+        font-weight: 400;
+    } 
+    
+    .display-post-media { 
+        width:100%;  
+        height:100%;  
+        object-fit: cover;  
+    } 
+    
+    .display-post-reaction { 
+        padding: 5px; 
+    } 
+    
+    .reaction-btns { 
+        display: flex;  
+        align-items: center; 
+        justify-content: space-around; 
+        gap: 10px;
+    } 
+    
+    .reaction-btns button { 
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        border:none;  
+        background:transparent; 
+        padding:15px 18px; 
+        cursor:pointer;  
+        transition: .3s ease;  
+        font-size: 14px;
+        color: var(--darkOff);
+    } 
+    
+    .reaction-btns button:hover { 
+        background-color:var(--whiteOff); 
+    } 
+} 

@@ -1,0 +1,32 @@
+// Color 
+$whiteOff: #f1f1f1; 
+$white: #ffffff; 
+$dark: #191919; 
+$darkOff: #666666; 
+$gray: #a4a4a4; 
+$red: #cc1016; 
+$blue: #0a66c2;
+$blueLight: #eef3f8;
+
+// layout
+main.feed .feed-wrapper {
+    display:flex;  
+    justify-content: space-between;  
+    gap: 20px; 
+    margin-top: 25px; 
+  
+    /* left-col */ 
+    .feed-left-col { 
+        flex-basis: 21%;  
+    } 
+  
+    /* main-col */ 
+    .feed-main-col { 
+        flex-basis: 50%;   
+    } 
+  
+    /* right-col */ 
+    .feed-right-col { 
+        flex-basis: 29%;
+    } 
+}
